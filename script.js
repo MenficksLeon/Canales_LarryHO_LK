@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const map = L.map('map').setView([-9.19, -75.0152], 6);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
+    attribution: 'Mapa creado por [Tu Nombre] | © OpenStreetMap contributors'
     }).addTo(map);
+
 
     // Obtener la zona definida en el HTML
     const zonaFiltrar = document.getElementById("map").dataset.zona;
