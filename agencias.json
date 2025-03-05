@@ -1,0 +1,309 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Los Olivos - Pro",
+                "DIRECCION": "Calle Alfredo Mendiola N° 7883 - 7885 Urb. Pro 1ra Etapa - Los Olivos.",
+                "REFERENCIA": "Al frente del mercado Unicachi",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0722823119354,
+                    -11.9381185536505
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Ventanilla",
+                "DIRECCION": "Ex zona comercial e industrial de Ventanilla Mza. C1, Lote 13",
+                "REFERENCIA": "A un par de cuadras de Plaza Vea de Ventanilla",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.128237,
+                    -11.869195
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "San Juan de Lurigancho",
+                "DIRECCION": "Avenida Próceres de la independencia N° 2664 Manzana G-1 Lote 05 Urb. San Carlos",
+                "REFERENCIA": "A un par de cuadras de la estación del tren San Carlos",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.008302,
+                    -11.987622
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "San Martin de Porres",
+                "DIRECCION": "Av. Perú 3426-3428 distrito de San Martín de Porres",
+                "REFERENCIA": "Cuadra 34, al costado de un mi banco o a una cuadra de la plaza de armas de SMP",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.084517,
+                    -12.030859
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Villa el Salvador",
+                "DIRECCION": "Av. Velasco Alvarado Lote 7, Mza N, parcela II parque industrial del cono sur",
+                "REFERENCIA": "3 cuadras de la estación del tren Parque industrial de VES",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.93308,
+                    -12.20453
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "San Juan de Miraflores",
+                "DIRECCION": "Av. San Juan 605 Mz. S Lote 5 zona ELC-E4 Urb. San Juan de Miraflores",
+                "REFERENCIA": "Paradero CT",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.972846,
+                    -12.164978
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Carretera Central",
+                "DIRECCION": "Av. Carretera Central N°4866 - Mz. b lote 12, Asociación Pro-vivienda Virgen del Carmen",
+                "REFERENCIA": "Paradero Soldadura / un par de cuadras del Mall de Puruchuco",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.92956,
+                    -12.0358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Manchay",
+                "DIRECCION": "Av. Victor Malasquez Mz. C4 Lote 3A, 3er piso - Sector Huertos de Manchay, Pachacamac.",
+                "REFERENCIA": "Pasteleria las delicias /segundo piso",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.8745357,
+                    -12.1114801
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Oficina Principal",
+                "DIRECCION": "Calle Álvarez Thomas N° 539 Cercado de Arequipa.",
+                "REFERENCIA": "A una cuadra de la Salaverry o 28 de Julio",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.53889,
+                    -16.40536
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Camana",
+                "DIRECCION": "Jirón Nicolas de Piérola Nro. 164, Cercado de Camaná.",
+                "REFERENCIA": "Al costado del supermercado La Estrella o Caja los Andes",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.711316,
+                    -16.622979
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Mollendo",
+                "DIRECCION": "Calle Juan B. Arenas 102A - Centro Poblado Mollendo Mz. B1 Lote 13",
+                "REFERENCIA": "Por el hospital ",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.014397,
+                    -17.019496
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Pedregal",
+                "DIRECCION": "Calle Vitor Mz. H Lt. 4, oficina N°3, 3er piso",
+                "REFERENCIA": "En la esquina del credinka al frente del parque",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.190156,
+                    -16.362393
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Huacho ",
+                "DIRECCION": "Av. Grau N° 285-B-Primer Piso",
+                "REFERENCIA": "Al costado de la Reniec de Huacho",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.60699,
+                    -11.10814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Huaral",
+                "DIRECCION": "Calle Luis Colan 242, Int. 2. Of. 3",
+                "REFERENCIA": "Al frente de la plaza de armas de huaral",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.20761,
+                    -11.49561
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Barranca",
+                "DIRECCION": "Calle Andrés de los Reyes 2da cuadra - 2do piso N° 234",
+                "REFERENCIA": "Un par de cuadras de la universidad nacional de barranca",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.756806,
+                    -10.753836
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Cañete",
+                "DIRECCION": "Urb. San Miguel Arcangel Mz. B Lt. 06 - 2do piso",
+                "REFERENCIA": "frente a la urbanizacion los reyes costado de la mueblería walter",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.3649529,
+                    -13.0704325
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Mala",
+                "DIRECCION": "Pasaje San José Mz. 25 Lt. 49, Of. 1C – Mala",
+                "REFERENCIA": "Por el cevichero  (esquina)",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.634221,
+                    -12.65647
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Huaycan",
+                "DIRECCION": "Pueblo Joven Proyecto Especial Huaycan Lt. 2 Andrés Avelino Cáceres, Zona F - Distrito de Ate Vitarte",
+                "REFERENCIA": "Frente al mercado Santa Rosa de Huaycan",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.818851,
+                    -12.01548
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "NOMBRE": "Ica",
+                "DIRECCION": "AV. SAN MARTIN MZ. B-05 LOTE 020 URB. SAN ISIDRO   distrito, provincia y departamento de Ica",
+                "REFERENCIA": "a 2 cuadras del Centro Comercial Plaza del Sol",
+                "IMAGEN": "https://github.com/MenficksLeon/LarryHO/blob/main/Kori.jpg?raw=true"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.727231,
+                    -14.074065
+                ]
+            }
+        }
+    ]
+}
