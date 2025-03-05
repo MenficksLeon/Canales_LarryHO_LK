@@ -7,18 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let geojsonLayer;
     let zonasData;
-    let mercadosLayer = null;
-    let mercadosData = null;
-    let gruposLayer = null;
-    let gruposData = null;
+    let canalesLayer = null;
+    let canalesData = null;
     let agenciasLayer = null;
     let agenciasData = null;
-
-    // Icono personalizado para mercados (fallback)
-    const mercadoIcon = L.icon({
-        iconUrl: 'https://github.com/MenficksLeon/LarryHO/blob/main/Mercados.png?raw=true',
-        iconSize: [25, 25]
-    });
 
     // Cargar GeoJSON de zonas
     fetch('zonas.geojson')
@@ -29,6 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
             mostrarZonas(zonasData);
         })
         .catch(error => console.error('Error cargando zonas:', error));
+
+    // Cargar canales
+    fetch('canales.json')
+        .then(response => response.json())
+        .then(data => {
+            canalesData = data;
+            mostrarCanales(canalesData);
+        })
+        .catch(error => console.error('Error cargando canales:', error));
+
+    // Cargar agencias
+    fetch('agencias.json')
+        .then(response => response.json())
+        .then(data => {
+            agenciasData = data;
+            mostrarAgencias(agenciasData);
+        })
+        .catch(error => console.error('Error cargando agencias:', error));
 
     function mostrarZonas(data) {
         if (geojsonLayer) {
@@ -101,75 +111,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Carga diferida (Lazy Load) de Mercados, Grupos y Agencias al hacer zoom >= 10
-    map.on('zoomend', function () {
-        if (map.getZoom() >= 10) {
-            if (!mercadosData) {
-                fetch('mercados.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        mercadosData = data;
-                        mostrarMercados(mercadosData);
-                    })
-                    .catch(error => console.error('Error cargando mercados:', error));
-            }
-            if (!gruposData) {
-                fetch('grupos.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        gruposData = data;
-                        mostrarGrupos(gruposData);
-                    })
-                    .catch(error => console.error('Error cargando grupos:', error));
-            }
-            if (!agenciasData) {
-                fetch('agencias.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        agenciasData = data;
-                        mostrarAgencias(agenciasData);
-                    })
-                    .catch(error => console.error('Error cargando agencias:', error));
-            }
+    function mostrarCanales(data) {
+        if (canalesLayer) {
+            map.removeLayer(canalesLayer);
         }
-    });
-
-    function mostrarMercados(data) {
-        if (mercadosLayer) {
-            map.removeLayer(mercadosLayer);
-        }
-        mercadosLayer = L.layerGroup();
+        canalesLayer = L.layerGroup();
         data.features.forEach(feature => {
             let coords = feature.geometry.coordinates;
-            // Crear icono usando la URL de la imagen en la propiedad IMAGEN
             let icono = L.icon({
                 iconUrl: feature.properties.IMAGEN,
                 iconSize: [30, 30]
             });
             let marker = L.marker([coords[1], coords[0]], { icon: icono })
-                .bindPopup(`<strong>Mercado:</strong> ${feature.properties.NOMBRE}<br>${feature.properties.DIRECCION}<br>${feature.properties.REFERENCIA}`);
-            mercadosLayer.addLayer(marker);
+                .bindPopup(
+                    `<strong>Canal:</strong> ${feature.properties.NOMBRE}<br>` +
+                    `<strong>Tipo:</strong> ${feature.properties.TIPO_DE_CANAL}<br>` +
+                    `<strong>Ciudad:</strong> ${feature.properties.CIUDAD}<br>` +
+                    `<strong>Horario:</strong> ${feature.properties.HORARIO}<br>` +
+                    `<strong>Dirección:</strong> ${feature.properties.DIRECCION}`
+                );
+            canalesLayer.addLayer(marker);
         });
-        map.addLayer(mercadosLayer);
-    }
-
-    function mostrarGrupos(data) {
-        if (gruposLayer) {
-            map.removeLayer(gruposLayer);
-        }
-        gruposLayer = L.layerGroup();
-        data.features.forEach(feature => {
-            let coords = feature.geometry.coordinates;
-            // Mostrar grupos como puntos simples (círculos) de color verde
-            let marker = L.circleMarker([coords[1], coords[0]], {
-                radius: 5,
-                color: "#28a745",
-                fillColor: "#28a745",
-                fillOpacity: 0.7
-            }).bindPopup(`<strong>Grupo:</strong> ${feature.properties.nombre}`);
-            gruposLayer.addLayer(marker);
-        });
-        map.addLayer(gruposLayer);
+        map.addLayer(canalesLayer);
     }
 
     function mostrarAgencias(data) {
@@ -179,7 +142,6 @@ document.addEventListener("DOMContentLoaded", function () {
         agenciasLayer = L.layerGroup();
         data.features.forEach(feature => {
             let coords = feature.geometry.coordinates;
-            // Usar la imagen de la propiedad IMAGEN para el icono de la agencia y no mostrarla en el popup
             let icono = L.icon({
                 iconUrl: feature.properties.IMAGEN,
                 iconSize: [30, 30]
